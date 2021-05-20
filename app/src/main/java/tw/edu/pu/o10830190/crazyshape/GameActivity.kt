@@ -22,14 +22,13 @@ class GameActivity : AppCompatActivity() {
                 finish()
             }
         })
-//。。。
         btn.setOnClickListener(object : View.OnClickListener {
             override fun onClick(p0: View?) {
                 handv.path.reset()
                 handv.invalidate()
             }
         })
-////
+
         handv.setOnTouchListener(object: View.OnTouchListener{
             override fun onTouch(p0: View?, event: MotionEvent): Boolean {
                 var xPos = event.getX()
@@ -80,9 +79,7 @@ class GameActivity : AppCompatActivity() {
                 FlagDraw=4}
         }
         Result += ": " + String.format("%.1f%%", outputs[0].score * 100.0f)
-//
-        //
-        ////
+
 
         // Releases model resources if no longer used.
         model.close()
