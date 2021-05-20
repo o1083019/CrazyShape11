@@ -83,6 +83,7 @@ class GameActivity : AppCompatActivity() {
 
         // Releases model resources if no longer used.
         model.close()
+
         Toast.makeText(this, Result, Toast.LENGTH_SHORT).show()
     }
 
